@@ -1,0 +1,29 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "@babel/transform-flow-strip-types",
+    "@babel/plugin-proposal-object-rest-spread",
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@page-objects": "./src/pageobjects",
+          "@input-data": "./src/lib/testdata",
+          "@db": "./src/testdata/database",
+          "@sql":"./src/testdata/sqlfiles",
+          "@core-libs": "./src/lib",
+          "@step-objects": "./src/stepsDefinitions"
+        }
+      }
+    ]
+  ],
+  "retainLines": true,
+  "sourceMaps": "both"
+}

@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype"
+  ],
+  "env": {
+      "node": true,
+      "mocha": true
+  },
+  "globals": {
+    "browser": true,
+    "$": true,
+    "$$": true,
+    "driver": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "plugin:flowtype/recommended"
+  ],
+  "rules": {
+    "require-await": "warn"
+  }
+}

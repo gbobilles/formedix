@@ -1,0 +1,9 @@
+
+logs
+*.log
+npm-debug.log*
+node_modules
+allure-results
+allure-report
+.npm
+.node_repl_history
